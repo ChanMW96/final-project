@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  required_talents: MyString
+  company_id: 1
+  individual_id: 1
+
+two:
+  description: MyString
+  required_talents: MyString
+  company_id: 1
+  individual_id: 1
