@@ -1,85 +1,10 @@
 Rails.application.routes.draw do
-  get 'categories/new'
-
-  get 'categories/create'
-
-  get 'categories/edit'
-
-  get 'categories/update'
-
-  get 'categories/destroy'
-
-  get 'updates/new'
-
-  get 'updates/create'
-
-  get 'updates/edit'
-
-  get 'updates/update'
-
-  get 'updates/destroy'
-
-  get 'fundings/new'
-
-  get 'fundings/create'
-
-  get 'fundings/edit'
-
-  get 'fundings/update'
-
-  get 'fundings/destroy'
-
-  get 'comments/new'
-
-  get 'comments/create'
-
-  get 'comments/edit'
-
-  get 'comments/update'
-
-  get 'comments/destroy'
-
-  get 'companies/new'
-
-  get 'companies/create'
-
-  get 'companies/edit'
-
-  get 'companies/update'
-
-  get 'companies/show'
-
-  get 'companies/destroy'
-
-  get 'companies/index'
-
-  get 'individuals/new'
-
-  get 'individuals/create'
-
-  get 'individuals/edit'
-
-  get 'individuals/update'
-
-  get 'individuals/show'
-
-  get 'individuals/destroy'
-
-  get 'individuals/index'
-
-  get 'projects/new'
-
-  get 'projects/create'
-
-  get 'projects/edit'
-
-  get 'projects/update'
-
-  get 'projects/show'
-
-  get 'projects/destroy'
-
-  get 'projects/index'
+  resources :updates, controller: "updates"
+  resources :fundings, controller: "fundings"
+  resources :comments, controller: "comments"
+  resources :companies, controller: "companies"
+  resources :individuals, controller: "individuals"
+  resources :projects, controller: "projects"
 
   get 'home/index'
 
