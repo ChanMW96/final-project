@@ -3,6 +3,7 @@ class FundingsController < ApplicationController
   end
 
   def create
+    @funding = Funding.new(user)
   end
 
   def edit
