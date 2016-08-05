@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'session/new'
+
+  get 'session/create'
+
+  get 'session/destroy'
+
   resources :updates, controller: "updates"
   resources :fundings, controller: "fundings"
   resources :comments, controller: "comments"
@@ -6,7 +12,7 @@ Rails.application.routes.draw do
   resources :individuals, controller: "individuals"
   resources :projects, controller: "projects"
 
-  get 'home/index'
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
